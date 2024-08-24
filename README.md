@@ -3,4 +3,4 @@
 - [Array](./javascript-database/array.js)
 - [Function]()
 - [Loops]()
-- [Conditions]()
+- [Conditions](./javascript-database/condition.js)
