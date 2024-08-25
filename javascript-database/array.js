@@ -120,3 +120,30 @@
     // more than one
     [].slice(0, 2);
 }
+
+//* How to merge two arrays
+{
+    [].concat(new Array(10));
+}
+
+//* Operations on array elements
+{
+    // Using map method
+    {
+        [].map(index => index + 'test') // return new array with new elements
+
+        // Or
+    
+        function adder(element){
+            return element + 'test'
+        }
+        [].map(adder)
+    }
+
+    // Using loops
+    {
+        for (let i = 0; i < [].length; i++){
+            [][i] // your operation
+        }
+    }
+}
