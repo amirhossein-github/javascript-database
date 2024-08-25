@@ -54,8 +54,17 @@
     }
 }
 
+//* How to add and remove item from arrays
+//* shift(), unshift(), splice(), push(), pop()
+{
+    // Add and remove to the beginning of the array
+    [].unshift();
+    [].shift();
 
+    // Add and remove to the middle of the array
+    [].splice();
 
-
-
-
+    // Add and remove to the end of the array
+    [].push();
+    [].pop();
+}
