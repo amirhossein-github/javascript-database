@@ -105,3 +105,18 @@
         [].evert(item => item.length > 0); // true: If all of the elements was acceptable to the condition
     }
 }
+
+//* Get the (last and first) elements of the array
+{
+    // Last element
+    // one item
+    [].at(-1);
+    // more than one
+    [].slice(-2);
+
+    // First element
+    // one item
+    [].at(1);
+    // more than one
+    [].slice(0, 2);
+}
