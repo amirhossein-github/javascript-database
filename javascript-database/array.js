@@ -68,3 +68,40 @@
     [].push();
     [].pop();
 }
+
+//* Search the array
+//* Return (Index, Element, Boolean)
+{
+    // Return (Index)
+    // return (first and last) index of element : search by value
+    {
+        [].indexOf('item'); // It starts searching from the beginning of the array and returns its index as soon as it finds the first similar item.
+        [].lastIndexOf('item'); // It starts searching from the end of the array and returns its index as soon as it finds the first matching item.
+    }
+    // return (first and last) index of element : search by condition
+    {
+        [].findIndex(item => item.length >= 0); // Returns the first index whose size is greater than zero
+        [].findLastIndex(item => item.length >= 0); // Returns the last index whose size is greater than zero
+    }
+
+    // Return (Element)
+    // return (first) element of array : search by condition
+    {
+        [].find(element => element < 0); // Returns the first index whose size is lower than zero
+    }
+    // return (all) element of array : search by condition
+    {
+        [].filter(element => element > 0); // Return [1, 2, 3, 5], numbers are bigger than 0
+    }
+
+    // Return (Boolean)
+    // return (boolean) : search by value
+    {
+        [].includes('item');
+    }
+    // return (boolean) : search by condition
+    {
+        [].some(item => item.length > 0); // true: If one of the elements was acceptable to the condition
+        [].evert(item => item.length > 0); // true: If all of the elements was acceptable to the condition
+    }
+}
