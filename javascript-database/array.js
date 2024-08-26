@@ -102,7 +102,7 @@
     // return (boolean) : search by condition
     {
         [].some(item => item.length > 0); // true: If one of the elements was acceptable to the condition
-        [].evert(item => item.length > 0); // true: If all of the elements was acceptable to the condition
+        [].every(item => item.length > 0); // true: If all of the elements was acceptable to the condition
     }
 }
 
