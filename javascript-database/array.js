@@ -8,6 +8,7 @@
     Array();
     new Array();
     new Array(12); // [ <12 empty item> ]
+    new Array('index1', 'index2', 'index3');
 }
 
 //* Examples of arrays
@@ -20,6 +21,11 @@
         [4, 5, 6],
         [7, 8, 9]
     ];
+}
+
+//* Array validation
+{
+    Array.isArray([]);
 }
 
 //* Range of arrays
@@ -130,14 +136,14 @@
 {
     // Using map method
     {
-        [].map(index => index + 'test') // return new array with new elements
+        [].map(index => index + 'test'); // return new array with new elements
 
         // Or
     
         function adder(element){
             return element + 'test'
         }
-        [].map(adder)
+        [].map(adder);
     }
 
     // Using loops
@@ -146,4 +152,38 @@
             [][i] // your operation
         }
     }
+
+    // Using reduce method
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 0].reduce((per, current) => per + current); // 45
+
+}
+
+//* Sort the array
+{
+    // By default, the array is sorted alphabetically
+    [3, 4, 12, 3, 4, 6, 20, 33, 11].sort(); // [11, 12, 20, 3, 3, 33, 4, 4, 6]
+
+    // Sort by number (integer and float)
+    // short mode
+    [3, 4, 12, 3, 4, 6, 20, 33, 11].sort((a, b) => a - b); // low to high
+    [3, 4, 12, 3, 4, 6, 20, 33, 11].sort((a, b) => b - a); // high to low
+    // long mode
+    [3, 4, 12, 3, 4, 6, 20, 33, 11].sort((a, b) => {
+        if(a > b) return 1;
+        if(a === b) return 0;
+        if(a < b) return -1;
+    });
+}
+
+//* How to use split and join in array
+//* Convert string to array
+//* Convert array to string
+{
+    "a, b, c, d".split(', '); // ['a', 'b', 'c', 'd']
+    ['a', 'b', 'c', 'd'].join(', '); // "a, b, c, d"
+}
+
+//* How to reverse an array
+{
+    [1, 2, 3].reverse() // [3, 2, 1]
 }
