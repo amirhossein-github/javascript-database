@@ -9,6 +9,8 @@
     new Array();
     new Array(12); // [ <12 empty item> ]
     new Array('index1', 'index2', 'index3');
+    new Array(..."abcdefghijklmnopqrstuvwxyz"); // ['a', 'b', 'c', ...]
+    new Array(...'123', ...'456', ...'789');
 }
 
 //* Examples of arrays
@@ -178,12 +180,29 @@
 //* How to use split and join in array
 //* Convert string to array
 //* Convert array to string
+//* split(), join()
 {
+    // use split and join
     "a, b, c, d".split(', '); // ['a', 'b', 'c', 'd']
     ['a', 'b', 'c', 'd'].join(', '); // "a, b, c, d"
+
+    // split with: spread operator
+    [..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+
+    // using for loop
+    let result = '';
+    let array = [...'this is testy text']
+    for (let i = 0; i < array.length; i++) {
+        result += array[i];
+    }
 }
 
 //* How to reverse an array
 {
-    [1, 2, 3].reverse() // [3, 2, 1]
+    [1, 2, 3].reverse(); // [3, 2, 1]
+}
+
+//* How to copy an array
+{
+    new Array(...[]); // []: It means the array that we want to copy
 }
