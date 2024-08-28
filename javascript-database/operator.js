@@ -56,5 +56,28 @@
     'ali123' || {}; // 'ali123'
 
     // Complex
-    2 + 2 < 3 && '2' + 2 || 3 && 2 - 1 * 3 // -1
+    2 + 2 < 3 && '2' + 2 || 3 && 2 - 1 * 3; // -1
+}
+
+//* Spread Operator
+{
+    // 1
+    new Array(...'test');
+
+    // 2
+    function defaultFunction(a, b, c, d){
+        return 'defaultFunction'    
+    };
+    defaultFunction(...'1234');
+}
+
+//* Rest Operator
+{
+    // 1
+    function defaultFunction(...numbers){
+        return numbers.reduce(
+            (res, a) => res + a, 0
+        )
+    }
+    defaultFunction(1, 2, 3, 4, 5, 6, 7, 8, 9, 0) // 45
 }
