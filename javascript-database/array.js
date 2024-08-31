@@ -70,7 +70,7 @@
     [].shift();
 
     // Add and remove to the middle of the array
-    [].splice();
+    [/* Your array */].splice(0 /* number of index */, 1);
 
     // Add and remove to the end of the array
     [].push();
