@@ -1,5 +1,5 @@
 /**
- * Arrays in javascript
+ * Objects in javascript
  */
 // I use it in code
 let defaultObject = {}
