@@ -12,16 +12,14 @@
 //* Nullish operator
 {
     // The nullish coalescing (??) operator is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.
-    //! Error: Unexpected token '?'
-    /*
-        undefined ?? true // true
-        null ?? true // true
+    
+    undefined ?? true // true
+    null ?? true // true
 
-        false ?? false // false
-        '' ?? false // ''
-        123 ?? false // 123
-        true ?? false // true
-    */
+    false ?? false // false
+    '' ?? false // ''
+    123 ?? false // 123
+    true ?? false // true
 }
 
 //* Logical operation
