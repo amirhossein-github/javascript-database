@@ -10,6 +10,7 @@
     const _variableName = ''
     const variableName = ''
     const VariableName = ''
+    const #variableName = '' // private variable in class
 
     /* can't be
         Space: mom dad = 'family'
