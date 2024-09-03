@@ -39,11 +39,9 @@
     // maximum range of array
     new Array(2 ** 32 - 1) // -1: Because we start from zero, not from one
 
-    //! Error: Invalid array length
-    /*
-        new Array(-1)
-        new Array(23.5)
-    */
+    // Invalid array length
+    new Array(-1)
+    new Array(23.5)
 }
 
 //* How to get the array size
