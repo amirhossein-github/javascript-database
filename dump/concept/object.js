@@ -10,6 +10,12 @@ let defaultObject = {}
     Object();
     new Object();
     new Object({key: 'value'});
+
+    // destructuring
+    const request = {url: 'https://google.com', method: 'GET'}
+    const { url, method } = request
+    // url === request.url
+    // method === request.method
 }
 
 //* Object key name

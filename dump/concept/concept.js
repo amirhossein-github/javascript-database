@@ -104,3 +104,16 @@
     // 2)
     '<script src="./module.js" type="module"></script>'
 }
+
+#javascript #concept #blocking and #non-blocking
+```javascript
+// blocking
+console.log('string1')
+console.log('string2')
+console.log('string3')
+console.log('string4')
+fs.readFileSync() // sync
+
+// non-blocking
+fs.readFile() // async
+```

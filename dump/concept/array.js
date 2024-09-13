@@ -11,6 +11,9 @@
     new Array('index1', 'index2', 'index3');
     new Array(..."abcdefghijklmnopqrstuvwxyz"); // ['a', 'b', 'c', ...]
     new Array(...'123', ...'456', ...'789');
+
+    // destructuring
+    const[,,newArray] = ['Aa', 'Bb', 'Cc', 'Dd'] // 'Cc'
 }
 
 //* Examples of arrays
